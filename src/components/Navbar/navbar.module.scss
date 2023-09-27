@@ -1,0 +1,25 @@
+@import '../../App.scss';
+
+.navbar {
+    @include flexbox(row);
+    background-color: $col-grey__dark;
+    padding: $indent__s $indent__m;
+    
+    &_link{
+        font: {
+            size: $font-size__s;
+            weight: 500;
+        }
+        letter-spacing: $letter-spacing__s;
+        text-transform: uppercase;
+        gap: $indent__m;
+        cursor: pointer;
+        color: $col-white;
+        text-decoration: none;
+     }
+      
+   &_link:hover{
+      color: $col-accent;
+  }
+
+}

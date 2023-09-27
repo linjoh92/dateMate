@@ -1,0 +1,22 @@
+@import './styles/variables';
+@import './styles/mixins';
+
+html{
+    font-family: $font-roboto;
+    background-color: $col-grey__light;
+    height: 100%;
+    margin: 0;
+
+    body, #root{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+
+
+
+

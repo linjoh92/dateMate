@@ -1,0 +1,26 @@
+@import '../../App.scss';
+
+.section{
+    @include flexbox(column);
+    justify-content: center;
+
+    p{
+        font: {
+            size: $font-size__m;
+            weight: 400;
+        }
+        text-transform: uppercase;
+        letter-spacing: $letter-spacing__m;
+        margin: $indent__m;
+    }
+
+    span{
+        font: {
+            size: $font-size__m;
+            weight: 600;
+        }
+        background-color: $col-white;
+        color: $col-accent;
+        padding: $indent__xs;
+    }
+}

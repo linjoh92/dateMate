@@ -1,0 +1,14 @@
+@import '../../App.scss';
+
+.container {
+    @include flexbox();
+    justify-content: center;
+    height: 100%;
+    padding: $indent__m;
+ 
+    &_content{
+        max-width: 600px;
+        height: 100%;
+     } 
+
+}
