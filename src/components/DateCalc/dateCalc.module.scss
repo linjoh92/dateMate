@@ -23,4 +23,18 @@
         color: $col-accent;
         padding: $indent__xs;
     }
+
+    p, span{
+        @include reponsive-mobil{
+            font-size: $font-size__s;
+            margin: $indent__s;
+            padding:  $indent__s;
+        }
+    }
+}
+
+.section{
+    @include reponsive-mobil{
+        min-height: calc(100vh - 230px)
+    }
 }

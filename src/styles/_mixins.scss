@@ -11,4 +11,11 @@
     border-top: 2px solid $color;
 }
 
+@mixin reponsive-mobil{
+    @media screen and (max-width: $screen-mobile) {
+        @content 
+        
+    }
+}
+
 

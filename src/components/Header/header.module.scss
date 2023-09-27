@@ -4,7 +4,6 @@
 
     @include flexbox($direction:column);
     background-color: $col-white;
-
     padding: $indent__xl;
 
     &_title{
@@ -16,6 +15,12 @@
         margin: 0;
     }
 
+    &_title{
+        @include reponsive-mobil{
+            font-size: $font-size__l;
+        }
+    }
+
     &_subtitle{
         font: {
            size: $font-size__s;
@@ -24,4 +29,10 @@
         margin: 0;
     }
 
+}
+
+.header{
+    @include reponsive-mobil{
+        padding: $indent__l;
+    }
 }
