@@ -1,31 +1,18 @@
 @import '../../App.scss';
 
 .footer {
+  @include flexbox(column);
+  gap: 10px;
+  margin: 0;
+  color: $col-white;
+  padding: $indent__base;
 
-    @include flexbox(column);
-    gap: 10px;
+  &_title {
+    font: {
+      size: $font-size__s;
+      weight: 300;
+    }
+    text-align: center;
     margin: 0;
-    background-color: $col-grey__dark;
-    color: $col-white;
-    padding: $indent__base;
-
-    
-    &_title{
-        font: {
-            size: $font-size__s;
-            weight: 500;
-        }
-        text-align: center;
-        margin: 0;
-    }
-    
-    &_subtitle{
-        font: {
-            size: $font-size__s;
-            weight: 400;
-        }
-        text-align: center;
-        margin: 0;
-    }
-
+  }
 }

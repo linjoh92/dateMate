@@ -1,16 +1,13 @@
-import styles from "./footer.module.scss"
+import styles from './footer.module.scss'
 
 type FooterProps = {
   title: string
-  subtitle: string
 }
 
-export default function Footer({title, subtitle}:FooterProps) {
-
+export default function Footer({ title }: FooterProps) {
   return (
     <div className={styles.footer}>
-      <p className={styles["footer_subtitle"]}>{subtitle}</p>
-      <p className={styles["footer_title"]}>{title}</p>
+      <p className={styles['footer_title']}>{title}</p>
     </div>
   )
 }

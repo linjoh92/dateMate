@@ -1,10 +1,9 @@
-import DateCalc from "../../components/DateCalc"
+import DateCalc from '../../components/DateCalc'
 
 export default function Home() {
-
-    return(
-        <>
-         <DateCalc/>
-        </>
-    )
+  return (
+    <>
+      <DateCalc />
+    </>
+  )
 }

@@ -1,21 +1,22 @@
-@mixin flexbox ($direction:row){
-    align-items: center;
-    display: flex;
-    flex-direction: $direction;
-    justify-content: space-between;
+@mixin flexbox($direction: row) {
+  align-items: center;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-between;
 }
 
-@mixin border($color: ($col-black)) {
-    padding: 0 $indent__xs;
-    border-bottom: 2px solid $color;
-    border-top: 2px solid $color;
+@mixin border(
+  $color: (
+    $col-black,
+  )
+) {
+  padding: 0 $indent__xs;
+  border-bottom: 2px solid $color;
+  border-top: 2px solid $color;
 }
 
-@mixin reponsive-mobil{
-    @media screen and (max-width: $screen-mobile) {
-        @content 
-        
-    }
+@mixin reponsive-mobil {
+  @media screen and (max-width: $screen-mobile) {
+    @content;
+  }
 }
-
-

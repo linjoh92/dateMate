@@ -1,27 +1,27 @@
 @import '../../App.scss';
 
-.error{
-    @include flexbox(column);
-    justify-content: center;
-    height: 100%;
+.error {
+  @include flexbox(column);
+  justify-content: center;
+  height: 100%;
+  color: $col-white;
 
+  h1 {
+    font-size: $font-size__xl;
+    margin: 0;
+  }
 
-    h1{
-        font-size: $font-size__xl;
-        margin: 0;
-    }
+  h6 {
+    margin: 0;
+  }
 
-    h6{
-        margin: 0;
-    }
+  a {
+    color: $col-white;
+    text-decoration: none;
+    margin-top: $indent__m;
+  }
 
-    a{
-        color: $col_black;
-        text-decoration: none;
-        margin-top: $indent__m;
-    }
-
-    a:hover{
-        color: $col_accent
-    }
+  a:hover {
+    color: $col_accent;
+  }
 }

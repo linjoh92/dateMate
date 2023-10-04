@@ -1,40 +1,28 @@
 @import '../../App.scss';
 
-.section{
-    @include flexbox(column);
-    justify-content: center;
+.section {
+  @include flexbox(column);
+  justify-content: center;
+  margin-bottom: $indent__xxl;
 
-    p{
-        font: {
-            size: $font-size__m;
-            weight: 400;
-        }
-        text-transform: uppercase;
-        letter-spacing: $letter-spacing__m;
-        margin: $indent__m;
-    }
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing__m;
+    margin: $indent__s;
+    font-size: $font-size__xl;
+    padding: $indent__s;
+  }
 
-    span{
-        font: {
-            size: $font-size__m;
-            weight: 600;
-        }
-        background-color: $col-white;
-        color: $col-accent;
-        padding: $indent__xs;
+  h2 {
+    @include reponsive-mobil {
+      font-size: $font-size__l;
+      padding: 0;
     }
-
-    p, span{
-        @include reponsive-mobil{
-            font-size: $font-size__s;
-            margin: $indent__s;
-            padding:  $indent__s;
-        }
-    }
+  }
 }
 
-.section{
-    @include reponsive-mobil{
-        min-height: calc(100vh - 230px)
-    }
+.section {
+  @include reponsive-mobil {
+    margin-bottom: $indent__xl;
+  }
 }

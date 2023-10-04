@@ -1,38 +1,24 @@
 @import '../../App.scss';
 
 .header {
+  @include flexbox($direction: column);
+  margin-top: $indent__xl;
+  padding: 0;
 
-    @include flexbox($direction:column);
-    background-color: $col-white;
-    padding: $indent__xl;
-
-    &_title{
-        font: {
-            size: $font-size__xl;
-        }
-        letter-spacing: $letter-spacing__m;
-        text-transform: uppercase;
-        margin: 0;
+  &_title {
+    font: {
+      size: $font-size__m;
+      weight: 400;
     }
+    letter-spacing: $letter-spacing__m;
+    text-transform: uppercase;
+    margin-top: $indent__s;
+  }
 
-    &_title{
-        @include reponsive-mobil{
-            font-size: $font-size__l;
-        }
+  &_title {
+    @include reponsive-mobil {
+      font-size: $font-size__s;
+      letter-spacing: $letter-spacing__m;
     }
-
-    &_subtitle{
-        font: {
-           size: $font-size__s;
-           weight: 400;
-        }
-        margin: 0;
-    }
-
-}
-
-.header{
-    @include reponsive-mobil{
-        padding: $indent__l;
-    }
+  }
 }
